@@ -1,0 +1,5 @@
+rootProject.name = 'Galgeleg-Distribueret'
+include 'Server'
+include 'Client'
+include 'Common'
+
