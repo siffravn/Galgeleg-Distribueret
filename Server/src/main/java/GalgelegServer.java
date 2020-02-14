@@ -9,6 +9,7 @@ public class GalgelegServer {
         java.rmi.registry.LocateRegistry.createRegistry(1099);
 
         IGalgeLogik galgeLogik = new GalgelogikImpl();
+        galgeLogik.hentOrdFraDr();
         Naming.rebind("rmi://localhost/Hangman", galgeLogik);
         System.out.println("Galelogik registreret");
 

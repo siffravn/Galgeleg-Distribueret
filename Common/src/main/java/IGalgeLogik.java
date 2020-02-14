@@ -22,4 +22,6 @@ public interface IGalgeLogik extends java.rmi.Remote {
 
     void gætBogstav(String bogstav) throws java.rmi.RemoteException;
 
+    void hentOrdFraDr() throws java.rmi.RemoteException;
+
 }
