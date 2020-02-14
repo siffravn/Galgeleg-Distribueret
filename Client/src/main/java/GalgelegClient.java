@@ -1,3 +1,5 @@
+import brugerautorisation.transport.rmi.Brugeradmin;
+
 import java.rmi.Naming;
 import java.util.Scanner;
 
@@ -5,9 +7,9 @@ public class GalgelegClient {
 
     public static void main(String[] args) throws Exception{
 
-//        Brugeradmin brugeradmin = (Brugeradmin) Naming.lookup("rmi://localhost/brugeradmin");
-//
-//        logIn(brugeradmin);
+        Brugeradmin brugeradmin = (Brugeradmin) Naming.lookup("rmi://localhost/brugeradmin");
+
+        logIn(brugeradmin);
 
         IGalgeLogik galgelogik = (IGalgeLogik) Naming.lookup("rmi://localhost/Hangman");
 
@@ -41,22 +43,22 @@ public class GalgelegClient {
         System.out.println(message + "\nOrdet var: " + galgeLogik.getOrdet());
     }
 
-//    public static void logIn(Brugeradmin brugeradmin) throws Exception{
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Brugernavn:");
-//        String userID = scanner.next();
-//        System.out.println("Adgangskode:");
-//        String password = scanner.next();
-//
-//        try {
-//            brugeradmin.hentBruger(userID, password);
-//
-//        }catch (Exception e){
-//            System.out.println("Forkert login! Prøv igen:");
-//            logIn(brugeradmin);
-//        }
-//        System.out.println("Du er nu logget ind");
-//    }
+    public static void logIn(Brugeradmin brugeradmin) throws Exception{
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Login:\nBrugernavn:");
+        String userID = scanner.next();
+        System.out.println("Adgangskode:");
+        String password = scanner.next();
+
+        try {
+            brugeradmin.hentBruger(userID, password);
+
+        }catch (Exception e){
+            System.out.println("Forkert login! Prøv igen:");
+            logIn(brugeradmin);
+        }
+        System.out.println("Du er nu logget ind\n");
+    }
 
     public static void ui(IGalgeLogik galgeLogik) throws Exception{
 

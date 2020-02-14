@@ -1,3 +1,5 @@
+import brugerautorisation.transport.rmi.Brugeradmin;
+
 import java.rmi.Naming;
 
 public class GalgelegServer {
@@ -14,8 +16,8 @@ public class GalgelegServer {
 //        Naming.rebind("rmi://localhost/brugeradmin", brugeradmin);
 //        System.out.println("BrugerAdmin registreret");
 //
-//        Brugeradmin brugeradmin = (Brugeradmin) Naming.lookup("rmi://javabog.dk/brugeradmin");
-//        Naming.rebind("rmi://localhost/brugeradmin", brugeradmin);
-//        System.out.println("BrugerAdmin registreret");
+        Brugeradmin brugeradmin = (Brugeradmin) Naming.lookup("rmi://javabog.dk/brugeradmin");
+        Naming.rebind("rmi://localhost/brugeradmin", brugeradmin);
+        System.out.println("BrugerAdmin registreret");
     }
 }
