@@ -2,7 +2,7 @@ import brugerautorisation.transport.rmi.Brugeradmin;
 
 import java.rmi.Naming;
 
-public class GalgelegServer {
+public class GalgelegRMIServer {
 
     public static void main(String[] args) throws Exception{
 
