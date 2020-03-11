@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cc0beee-376f-44c8-bd86-864c81216442" name="Default Changelist" comment="RESTServer play() modified - show unknown word ad default">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/GalgelogikImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/BenytBrugerdatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Brugerdatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/SendMail$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/SendMail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Serialisering.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/rmi/BrugeradminImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/rmi/Brugeradminserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/soap/BrugeradminImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/soap/Brugeradminserver.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -48,31 +61,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#248#249#0" expanded="true" />
@@ -83,34 +75,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelogikImpl.java">
+        <entry file="file://$PROJECT_DIR$/Server/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/main/java/IGalgeLogik.java">
+        <entry file="file://$PROJECT_DIR$/Client/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/main/java/GalgelegClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -121,7 +98,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Development" />
+        <entry key="$PROJECT_DIR$" value="Development_REST" />
       </map>
     </option>
     <option name="RESET_MODE" value="HARD" />
@@ -709,11 +686,11 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="11080517895076" />
+        <entry key="$PROJECT_DIR$" value="11080681206208" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/Client/build.gradle" value="2423475882" />
+        <entry key="$PROJECT_DIR$/Client/build.gradle" value="4047828782" />
         <entry key="$PROJECT_DIR$/Common/build.gradle" value="3782528440" />
-        <entry key="$PROJECT_DIR$/Server/build.gradle" value="1455676285" />
+        <entry key="$PROJECT_DIR$/Server/build.gradle" value="698392187" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3782528440" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2007532874" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1846224976" />
@@ -860,10 +837,10 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/GalgelegServer.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/Server/build.gradle" />
-        <option value="$PROJECT_DIR$/Client/build.gradle" />
         <option value="$PROJECT_DIR$/Server/src/main/java/GalgelogikImpl.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java" />
+        <option value="$PROJECT_DIR$/Client/build.gradle" />
+        <option value="$PROJECT_DIR$/Server/build.gradle" />
       </list>
     </option>
   </component>
@@ -872,6 +849,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
@@ -896,53 +879,6 @@
               <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
               <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
@@ -994,9 +930,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583928924424" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583929784324" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1176,7 +1115,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18901000" />
+    <option name="totallyTimeSpent" value="19383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1206,7 +1145,7 @@
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3291815" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.06405694" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.017793594" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.3985765" />
@@ -1217,7 +1156,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32955465" />
       <window_info anchor="right" id="Gradle" order="6" weight="0.17732793" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
@@ -1355,24 +1294,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/brugerautorisation/transport/rmi/BrugeradminImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1395,29 +1320,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/main/java/GalgelegClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        <state relative-caret-position="47">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1428,6 +1334,39 @@
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1488,7 +1427,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.33861145" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
