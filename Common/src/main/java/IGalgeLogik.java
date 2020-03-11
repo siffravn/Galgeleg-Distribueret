@@ -24,4 +24,6 @@ public interface IGalgeLogik extends java.rmi.Remote {
 
     void hentOrdFraDr() throws java.rmi.RemoteException;
 
+    void logStatus() throws java.rmi.RemoteException;
+
 }

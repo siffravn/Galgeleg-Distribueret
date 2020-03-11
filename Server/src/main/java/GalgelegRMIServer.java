@@ -12,6 +12,7 @@ public class GalgelegRMIServer {
         galgeLogik.hentOrdFraDr();
         Naming.rebind("rmi://localhost/Hangman", galgeLogik);
         System.out.println("Galelogik registreret");
+        galgeLogik.logStatus();
 
 //        Brugeradmin brugeradmin = new BrugeradminImpl();
 //        Naming.rebind("rmi://localhost/brugeradmin", brugeradmin);

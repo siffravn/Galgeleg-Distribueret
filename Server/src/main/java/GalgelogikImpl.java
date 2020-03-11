@@ -123,6 +123,7 @@ public class GalgelogikImpl extends UnicastRemoteObject implements IGalgeLogik {
     logStatus();
   }
 
+  @Override
   public void logStatus() {
     System.out.println("---------- ");
     System.out.println("- ordet (skult) = " + ordet);
