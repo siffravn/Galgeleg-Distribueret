@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cc0beee-376f-44c8-bd86-864c81216442" name="Default Changelist" comment="RESTServer play() modified - show unknown word ad default">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+    <list default="true" id="1cc0beee-376f-44c8-bd86-864c81216442" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/GalgelogikImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/BenytBrugerdatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Brugerdatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/SendMail$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/SendMail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Serialisering.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/rmi/BrugeradminImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/rmi/Brugeradminserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/soap/BrugeradminImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/soap/Brugeradminserver.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -60,6 +46,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,27 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -883,6 +864,27 @@
             <path>
               <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
               <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -905,6 +907,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -935,7 +942,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583929784324" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583930053383" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -952,6 +959,126 @@
       <recent name="C:\Users\Siff\IdeaProjects\Galgeleg-Distribueret\Common\src\main\java" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/GalgelegServer.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/GalgelogikImpl.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/BenytBrugerdatabase.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Brugerdatabase.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/SendMail$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/SendMail.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Serialisering.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/rmi/BrugeradminImpl.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/rmi/Brugeradminserver.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/soap/BrugeradminImpl.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/soap/Brugeradminserver.class</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -965,16 +1092,16 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.GalgelegRESTServer">
-    <configuration name="GalgelegClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GalgelegClient" />
-      <module name="Client_main" />
+    <configuration name="GalgelegRESTServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GalgelegRESTServer" />
+      <module name="Server_main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GalgelegRESTServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GalgelegRESTServer" />
-      <module name="Server_main" />
+    <configuration name="GalgelegRMIClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GalgelegRMIClient" />
+      <module name="Client_main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -986,18 +1113,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GalgelegServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GalgelegServer" />
+      <module name="Server_main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.GalgelegRMIServer" />
-      <item itemvalue="Application.GalgelegClient" />
+      <item itemvalue="Application.GalgelegRMIClient" />
       <item itemvalue="Application.GalgelegRESTServer" />
+      <item itemvalue="Application.GalgelegServer" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GalgelegRESTServer" />
         <item itemvalue="Application.GalgelegRMIServer" />
+        <item itemvalue="Application.GalgelegRMIClient" />
+        <item itemvalue="Application.GalgelegServer" />
         <item itemvalue="Application.GalgelegClient" />
-        <item itemvalue="Application.GalgelegClient" />
-        <item itemvalue="Application.GalgelegRMIServer" />
       </list>
     </recent_temporary>
   </component>
@@ -1111,11 +1246,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583876655817</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Module dependencies corrected">
+      <created>1583929827048</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583929827048</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19383000" />
+    <option name="totallyTimeSpent" value="19633000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1128,9 +1270,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2437247" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2437247" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1209,7 +1350,8 @@
     <MESSAGE value="Rename RMIServer" />
     <MESSAGE value="RESTServer first attempt" />
     <MESSAGE value="RESTServer can run (dependencies setup correct now?)" />
-    <option name="LAST_COMMIT_MESSAGE" value="RESTServer can run (dependencies setup correct now?)" />
+    <MESSAGE value="Module dependencies corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module dependencies corrected" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Common/build.gradle">
@@ -1318,26 +1460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/GalgelegClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1356,6 +1478,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/GalgelegClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="45" column="63" lean-forward="true" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

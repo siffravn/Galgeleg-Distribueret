@@ -3,7 +3,7 @@ import brugerautorisation.transport.rmi.Brugeradmin;
 import java.rmi.Naming;
 import java.util.Scanner;
 
-public class GalgelegClient {
+public class GalgelegRMIClient {
 
     public static void main(String[] args) throws Exception{
 
