@@ -17,22 +17,30 @@ public class GalgelegRESTServer {
 
         app = Javalin.create().start(4000);
 
+        app.get("", ctx -> ctx.redirect("/login"));
         app.get("/login", ctx -> login(ctx));
         app.get("/play", ctx -> hangman(ctx));
     }
 
     // Acting as rmi-client to Javabog.dk
+    //http://localhost:4000/login?username=s173998&password=kk29
     private static void login(Context ctx) throws Exception{
         String userID = ctx.queryParam("username");
         String password = ctx.queryParam("password");
         Brugeradmin brugeradmin = (Brugeradmin) Naming.lookup("rmi://javabog.dk/brugeradmin");
 
-        try {
-            brugeradmin.hentBruger(userID, password);
-            ctx.redirect("/playGame");
+        if (userID == null || password == null){
+            ctx.html("please login");
 
-        }catch (Exception e){
+        }else {
+            try {
+                brugeradmin.hentBruger(userID, password);
+                ctx.html("login successful");
+//            ctx.redirect("/playGame");
 
+            }catch (Exception e){
+                ctx.html("access denied");
+            }
         }
 
     }
@@ -40,14 +48,19 @@ public class GalgelegRESTServer {
     // Acting as rmi-client to GaglelegRMIServer (localhost)
     public static void hangman(Context ctx) throws Exception{
         IGalgeLogik galgeLogik = (IGalgeLogik) Naming.lookup("rmi://localhost/Hangman");
+        String letter = ctx.queryParam("guess");
 
-        ctx.html(galgeLogik.getSynligtOrd());
-
-        while(!galgeLogik.erSpilletSlut()){
-            String letter = ctx.queryParam("guess");
-            galgeLogik.gætBogstav(letter);
-
+        if (letter == null){
             ctx.html(galgeLogik.getSynligtOrd());
+        }else {
+            try {
+                while(!galgeLogik.erSpilletSlut()){
+                    galgeLogik.gætBogstav(letter);
+                    ctx.html(galgeLogik.getSynligtOrd());
+                }
+            }catch (Exception e){
+                ctx.html("An error occurred");
+            }
         }
     }
 }
