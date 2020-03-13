@@ -5,23 +5,28 @@ import java.util.Scanner;
 
 public class GalgelegRMIClient {
 
+    private static String ID;
+
     public static void main(String[] args) throws Exception{
 
         Brugeradmin brugeradmin = (Brugeradmin) Naming.lookup("rmi://localhost/brugeradmin");
+        IServerRMIController serverRMIController = (IServerRMIController) Naming.lookup("rmi://localhost/Controller");
 
         logIn(brugeradmin);
 
-        IGalgeLogik galgelogik = (IGalgeLogik) Naming.lookup("rmi://localhost/Hangman");
+        setID();
 
-        runHangman(galgelogik);
+        serverRMIController.newGame(ID);
 
+        IGalgeLogik galgeLogik = serverRMIController.getGame(ID);
+
+        runHangman(galgeLogik);
     }
 
     public static void runHangman(IGalgeLogik galgeLogik) throws Exception{
 
         Scanner scanner = new Scanner(System.in);
 
-        galgeLogik.nulstil();
         System.out.println("Velkommen til Galgeleg!");
         String message = "";
 
@@ -60,6 +65,13 @@ public class GalgelegRMIClient {
         System.out.println("Du er nu logget ind\n");
     }
 
+    public static void setID(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please set gameID:");
+        String str = scanner.next();
+        ID = str;
+    }
+
     public static void ui(IGalgeLogik galgeLogik) throws Exception{
 
         int life = 7-galgeLogik.getAntalForkerteBogstaver();
@@ -69,10 +81,5 @@ public class GalgelegRMIClient {
         string += "\t\tBrugte bogstaver" + galgeLogik.getBrugteBogstaver();
 
         System.out.println(string);
-
-//        System.out.println("\nGæt ordet: " + galgeLogik.getSynligtOrd() );
-//        System.out.println(7-galgeLogik.getAntalForkerteBogstaver() + " Liv tilbage!");
-//        System.out.println("Brugte bogstaver" + galgeLogik.getBrugteBogstaver());
-
     }
 }
