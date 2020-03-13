@@ -24,3 +24,10 @@ dependencies {
     compile 'org.slf4j:slf4j-simple:1.7.28'                         //For logging
     compile 'com.fasterxml.jackson.core:jackson-databind:2.10.1'    //For serialization
 }
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'GalgelegRESTServer'
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
