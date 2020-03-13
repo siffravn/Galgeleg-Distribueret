@@ -85,7 +85,7 @@ public class GalgelegRESTServer {
     public static void guessOnLetter (Context ctx, IGalgeLogik galgeLogik) throws Exception {
         try {
             String letter = ctx.queryParam("letter");
-            galgeLogik.gætBogstav(letter);
+            galgeLogik.gaetBogstav(letter);
 
             if (galgeLogik.erSidsteBogstavKorrekt()){
                 ctx.html("correct letter");

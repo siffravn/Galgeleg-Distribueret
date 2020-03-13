@@ -24,8 +24,8 @@ public class Diverse {
 		Class k = obj.getClass();
 		sb.append(k.getSimpleName()).append(':');
 		for (Field felt : k.getFields()) try {
-			Object værdi = felt.get(obj);
-			sb.append(' ').append(felt.getName()).append('=').append('"').append(værdi).append('"');
+			Object vaerdi = felt.get(obj);
+			sb.append(' ').append(felt.getName()).append('=').append('"').append(vaerdi).append('"');
 		} catch (Exception e) { e.printStackTrace(); }
 		return sb.toString();
 	}
@@ -39,8 +39,8 @@ public class Diverse {
 		StringBuilder sb = new StringBuilder();
 		Class k = obj.getClass();
 		for (Field felt : k.getFields()) try {
-			Object værdi = felt.get(obj);
-			sb.append('"').append(String.valueOf(værdi).replaceAll("\"", "\\\"").replaceAll("\n", "\\n")).append('"').append(',');
+			Object vaerdi = felt.get(obj);
+			sb.append('"').append(String.valueOf(vaerdi).replaceAll("\"", "\\\"").replaceAll("\n", "\\n")).append('"').append(',');
 		} catch (Exception e) { e.printStackTrace(); }
 		return sb.substring(0,sb.length()-1); // fjern sidste komma
 	}

@@ -20,8 +20,8 @@ public class BrugeradminImpl extends UnicastRemoteObject implements Brugeradmin
 	}
 
 	@Override
-	public Bruger ændrAdgangskode(String brugernavn, String glAdgangskode, String nyAdgangskode) {
-    return db.ændrAdgangskode(brugernavn, glAdgangskode, nyAdgangskode);
+	public Bruger aendrAdgangskode(String brugernavn, String glAdgangskode, String nyAdgangskode) {
+    return db.aendrAdgangskode(brugernavn, glAdgangskode, nyAdgangskode);
 	}
 
 	@Override
@@ -36,13 +36,13 @@ public class BrugeradminImpl extends UnicastRemoteObject implements Brugeradmin
 	}
 
 	@Override
-	public void sendGlemtAdgangskodeEmail(String brugernavn, String supplerendeTekst) {
+	public void sendGlemtAdgangskodeEmail(String brugernavn, String folgetekst) {
 		Bruger b = db.brugernavnTilBruger.get(brugernavn);
 		try {
 			SendMail.sendMail("DIST: Din adgangskode ",
 					"Kære "+b.fornavn+",\n\nDit brugernavn er "+b.brugernavn+" og din adgangskode er: "+b.adgangskode
 					+(b.sidstAktiv>0?"":"\n\nDu skal skifte adgangskoden for at bekræfte at du følger kurset.\nSe hvordan på https://goo.gl/26pBG9 \n")
-					+"\n"+supplerendeTekst,
+					+"\n"+ folgetekst,
 					b.email);
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -56,8 +56,8 @@ public class BrugeradminImpl extends UnicastRemoteObject implements Brugeradmin
 	}
 
 	@Override
-	public void setEkstraFelt(String brugernavn, String adgangskode, String feltnavn, Object værdi) {
-		db.hentBruger(brugernavn, adgangskode).ekstraFelter.put(feltnavn, værdi);
+	public void setEkstraFelt(String brugernavn, String adgangskode, String feltnavn, Object vaerdi) {
+		db.hentBruger(brugernavn, adgangskode).ekstraFelter.put(feltnavn, vaerdi);
 		db.gemTilFil(false);
 	}
         

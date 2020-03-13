@@ -30,7 +30,7 @@ public class GalgelegRMIClient {
         while (!galgeLogik.erSpilletSlut()){
             System.out.println("Indtast et bogstav");
             String letter = scanner.next();
-            galgeLogik.gætBogstav(letter);
+            galgeLogik.gaetBogstav(letter);
 
             ui(galgeLogik);
         }

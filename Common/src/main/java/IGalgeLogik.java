@@ -20,7 +20,7 @@ public interface IGalgeLogik extends java.rmi.Remote {
 
     void nulstil() throws java.rmi.RemoteException;
 
-    void gætBogstav(String bogstav) throws java.rmi.RemoteException;
+    void gaetBogstav(String bogstav) throws java.rmi.RemoteException;
 
     void hentOrdFraDr() throws java.rmi.RemoteException;
 

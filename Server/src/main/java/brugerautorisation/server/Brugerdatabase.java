@@ -49,7 +49,7 @@ public class Brugerdatabase implements Serializable {
 				String data = new String(Files.readAllBytes(path));
 				System.out.println("Det ser ud til at du ikke har en brugerdatabase endnu.");
 				System.out.println("Jeg læser nu filen "+path+" og opretter en brugerdatabase fra den\n");
-				indlæsDeltagerlisteFraCampusnetHtml(data, instans.brugere);
+				indlaesDeltagerlisteFraCampusnetHtml(data, instans.brugere);
         Bruger b = new Bruger();
         b.campusnetId = "ukendt";
         b.ekstraFelter.put("webside", "https://www.diplom.dtu.dk/");
@@ -125,15 +125,15 @@ public class Brugerdatabase implements Serializable {
     throw new IllegalArgumentException("Forkert brugernavn eller adgangskode for "+brugernavn);
 	}
 
-  public Bruger ændrAdgangskode(String brugernavn, String glAdgangskode, String nyAdgangskode) {
+  public Bruger aendrAdgangskode(String brugernavn, String glAdgangskode, String nyAdgangskode) {
     // forsink lidt for at imødegå brute force angreb
     try { Thread.sleep((int)(Math.random()*100));	} catch (Exception ex) { }
 
     // Tjek først om brugerens adgangskode allerede ER ændret til nyAdgangskode - der er mange der kommer til at lave kaldet flere gange
 	Bruger b = brugernavnTilBruger.get(brugernavn);
-	System.out.println("ændrAdgangskode "+brugernavn+" fra "+glAdgangskode + " til "+nyAdgangskode+" gav b="+b);
+	System.out.println("aendrAdgangskode "+brugernavn+" fra "+glAdgangskode + " til "+nyAdgangskode+" gav b="+b);
 	if (b!=null && !b.adgangskode.equals(glAdgangskode) && b.adgangskode.equals(nyAdgangskode)) {
-      throw new IllegalStateException("Adgangskoden ER allerede ændret til "+nyAdgangskode+". Hvorfor vil du ændre den til det samme som den allerede er? (Vink: Kald kun ændrAdgangskode én gang :-)");
+      throw new IllegalStateException("Adgangskoden ER allerede ændret til "+nyAdgangskode+". Hvorfor vil du ændre den til det samme som den allerede er? (Vink: Kald kun aendrAdgangskode én gang :-)");
     }
     b = hentBruger(brugernavn, glAdgangskode); // Lav derefter det almindelige adgangskodetjek
 
@@ -147,7 +147,7 @@ public class Brugerdatabase implements Serializable {
   }
 
 
-	public static void indlæsDeltagerlisteFraCampusnetHtml(String data, ArrayList<Bruger> brugere) {
+	public static void indlaesDeltagerlisteFraCampusnetHtml(String data, ArrayList<Bruger> brugere) {
 		//System.out.println("data="+data);
 		for (String tr : data.split("<tr")) {
 			if (tr.contains("context_header")) continue;
