@@ -8,16 +8,10 @@ public class GalgelegRMIServer {
 
         java.rmi.registry.LocateRegistry.createRegistry(1099);
 
-        IGalgeLogik galgeLogik = new GalgelogikImpl();
-        galgeLogik.hentOrdFraDr();
-        Naming.rebind("rmi://localhost/Hangman", galgeLogik);
-        System.out.println("Galelogik registreret");
-        galgeLogik.logStatus();
+        IServerRMIController serverRMIController = new ServerControllerRMI();
+        Naming.rebind("rmi://localhost/Controller", serverRMIController);
+        System.out.println("Controller registreret");
 
-//        Brugeradmin brugeradmin = new BrugeradminImpl();
-//        Naming.rebind("rmi://localhost/brugeradmin", brugeradmin);
-//        System.out.println("BrugerAdmin registreret");
-//
         Brugeradmin brugeradmin = (Brugeradmin) Naming.lookup("rmi://javabog.dk/brugeradmin");
         Naming.rebind("rmi://localhost/brugeradmin", brugeradmin);
         System.out.println("BrugerAdmin registreret");
