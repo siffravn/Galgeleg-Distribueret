@@ -24,6 +24,7 @@ public class GalgelegRESTServer {
         app.get("/login", ctx -> login(ctx));
         app.get("/play", ctx -> hangman(ctx));
         app.get("/play/:id", ctx -> createGame(ctx, controller));
+        app.get("/play/:id/terminate", ctx -> terminateGame(ctx, controller));
         app.get("/play/:id/lives", ctx -> getLives(ctx, controller));
         app.get("/play/:id/visibleWord", ctx -> getVisibleWord(ctx, controller));
         app.get("/play/:id/usedLetters", ctx -> getUsedLetters(ctx, controller));
@@ -42,6 +43,17 @@ public class GalgelegRESTServer {
             ctx.html("Couldn't create new game");
         }
 
+    }
+
+    static void terminateGame(Context ctx, IServerRMIController controller) {
+        String clientID = ctx.pathParam("id");
+        try {
+            controller.terminateGame(clientID);
+            ctx.html("Terminated game " + clientID);
+
+        } catch (Exception e){
+            ctx.html("Couldn't terminate game");
+        }
     }
 
 

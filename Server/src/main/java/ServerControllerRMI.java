@@ -1,4 +1,5 @@
 import java.rmi.Naming;
+import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
 
@@ -24,6 +25,11 @@ public class ServerControllerRMI extends UnicastRemoteObject implements IServerR
         } catch (Exception e) {
             System.out.println("Could not create new Game " + clientID);
         }
+    }
+
+    @Override
+    public void terminateGame(String clientID) throws RemoteException {
+        games.remove(clientID);
     }
 
     @Override

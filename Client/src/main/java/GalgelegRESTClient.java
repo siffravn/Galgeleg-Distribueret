@@ -32,6 +32,8 @@ public class GalgelegRESTClient {
 
         } while (!isGameFinished(client));
 
+        terminateGame(client);
+
     }
 
     public static void login(Client client){
@@ -58,6 +60,16 @@ public class GalgelegRESTClient {
 
     public static void createGame(Client client){
         String path = "/play/" + clientID;
+        String url = domain + path;
+
+        Response response = client.target(url).request().get();
+        String result = response.readEntity(String.class);
+
+        System.out.println(result);
+    }
+
+    private static void terminateGame(Client client) {
+        String path = "/play/" + clientID + "/terminate";
         String url = domain + path;
 
         Response response = client.target(url).request().get();
