@@ -99,7 +99,7 @@ public class GalgelogikImpl extends UnicastRemoteObject implements IGalgeLogik {
   }
 
   @Override
-  public void gaetBogstav(String bogstav) {
+  public void guessLetter(String bogstav) {
     if (bogstav.length() != 1) return;
     System.out.println("Der gættes på bogstavet: " + bogstav);
     if (brugteBogstaver.contains(bogstav)) return;
