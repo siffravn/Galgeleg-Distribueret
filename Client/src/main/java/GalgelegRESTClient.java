@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class GalgelegRESTClient {
     static String domain = "http://localhost:4000";
-    static boolean isLoggedIn = false;
+    static String clientID;
 
     public static void main(String[] args) {
         Client client = ClientBuilder.newClient();
@@ -18,6 +18,8 @@ public class GalgelegRESTClient {
     public static void run(Client client){
 
         login(client);
+
+        createGame(client);
 
         System.out.println("Velkommen til Galgeleg!");
 
@@ -46,12 +48,22 @@ public class GalgelegRESTClient {
         String result = response.readEntity(String.class);
 
         if (result.equals("login successful")){
+            clientID = userID;
             System.out.println(result);
         } else {
             System.out.println(result);
             login(client);
         }
+    }
 
+    public static void createGame(Client client){
+        String path = "/play/" + clientID;
+        String url = domain + path;
+
+        Response response = client.target(url).request().get();
+        String result = response.readEntity(String.class);
+
+        System.out.println(result);
     }
 
     public static void guessOnLetter(Client client) {
@@ -59,7 +71,7 @@ public class GalgelegRESTClient {
         System.out.println("Indtast et bogstav");
         String letter = scanner.next();
 
-        String path = "/play/guess";
+        String path = "/play/"+ clientID +"/guess";
         String url = domain + path + "?letter=" + letter;
 
         Response response = client.target(url).request().get();
@@ -69,7 +81,7 @@ public class GalgelegRESTClient {
     }
 
     public static boolean isGameFinished(Client client) {
-        String path = "/play/isFinished";
+        String path = "/play/"+ clientID +"/isFinished";
         String url = domain + path;
 
         Response response = client.target(url).request().get();
@@ -101,7 +113,7 @@ public class GalgelegRESTClient {
     }
 
     public static String getLivesLeft(Client client){
-        String path = "/play/lives";
+        String path = "/play/"+ clientID +"/lives";
         String url = domain + path;
 
         Response response = client.target(url).request().get();
@@ -111,7 +123,7 @@ public class GalgelegRESTClient {
     }
 
     public static String getVisibleWord(Client client){
-        String path = "/play/visibleWord";
+        String path = "/play/"+ clientID +"/visibleWord";
         String url = domain + path;
 
         Response response = client.target(url).request().get();
@@ -122,7 +134,7 @@ public class GalgelegRESTClient {
 
     public static String getUsedLetters(Client client){
 
-        String path = "/play/usedLetters";
+        String path = "/play/"+ clientID +"/usedLetters";
         String url = domain + path;
 
         Response response = client.target(url).request().get();

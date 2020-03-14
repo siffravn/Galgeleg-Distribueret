@@ -4,22 +4,14 @@
     <list default="true" id="1cc0beee-376f-44c8-bd86-864c81216442" name="Default Changelist" comment="Implement RMI server to use">
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/GalgelegRESTClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/GalgelegRESTClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/GalgelegRMIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/GalgelegRMIClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/out/production/classes/IGalgeLogik.class" beforeDir="false" afterPath="$PROJECT_DIR$/Common/out/production/classes/IGalgeLogik.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/out/production/classes/brugerautorisation/data/Diverse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Common/out/production/classes/brugerautorisation/data/Diverse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/out/production/classes/brugerautorisation/transport/rmi/Brugeradmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/Common/out/production/classes/brugerautorisation/transport/rmi/Brugeradmin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/out/production/classes/brugerautorisation/transport/soap/Brugeradmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/Common/out/production/classes/brugerautorisation/transport/soap/Brugeradmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/IGalgeLogik.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/IGalgeLogik.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/out/production/classes/GalgelogikImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/GalgelogikImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Brugerdatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Brugerdatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Serialisering.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Serialisering.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/rmi/BrugeradminImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/rmi/BrugeradminImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/soap/BrugeradminImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/transport/soap/BrugeradminImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/GalgelogikImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/GalgelogikImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -85,10 +77,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/ServerControllerRMI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,11 +88,56 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/src/main/java/IGalgeLogik.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/src/main/java/GalgelegRMIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+            <state relative-caret-position="170">
+              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1997">
+              <caret line="130" column="23" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/main/java/GalgelegRESTClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,8 +150,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -860,20 +897,21 @@
         <option value="$PROJECT_DIR$/Server/src/main/java/GalgelegServer.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/Client/build.gradle" />
-        <option value="$PROJECT_DIR$/Client/src/main/java/GalgelegRESTClient.java" />
         <option value="$PROJECT_DIR$/Common/src/main/java/brugerautorisation/data/Diverse.java" />
         <option value="$PROJECT_DIR$/Common/src/main/java/brugerautorisation/transport/rmi/Brugeradmin.java" />
         <option value="$PROJECT_DIR$/Common/src/main/java/brugerautorisation/transport/soap/Brugeradmin.java" />
-        <option value="$PROJECT_DIR$/Common/src/main/java/IGalgeLogik.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/brugerautorisation/server/Brugerdatabase.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/brugerautorisation/server/Serialisering.java" />
         <option value="$PROJECT_DIR$/Server/build.gradle" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/GalgelogikImpl.java" />
         <option value="$PROJECT_DIR$/Common/src/main/java/IServerRMIController.java" />
-        <option value="$PROJECT_DIR$/Server/src/main/java/ServerControllerRMI.java" />
         <option value="$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java" />
         <option value="$PROJECT_DIR$/Client/src/main/java/GalgelegRMIClient.java" />
+        <option value="$PROJECT_DIR$/Common/src/main/java/Paths.java" />
+        <option value="$PROJECT_DIR$/Common/src/main/java/IGalgeLogik.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java" />
+        <option value="$PROJECT_DIR$/Server/src/main/java/ServerControllerRMI.java" />
+        <option value="$PROJECT_DIR$/Client/src/main/java/GalgelegRESTClient.java" />
       </list>
     </option>
   </component>
@@ -901,101 +939,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -1012,6 +955,119 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="4.8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="4.8" type="462c0819:PsiDirectoryNode" />
+              <item name="fileHashes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galgeleg-Distribueret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galgeleg-Distribueret" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1020,7 +1076,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584132070484" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584182872145" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1049,7 +1105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GalgelegRMIClient">
+  <component name="RunManager" selected="Application.GalgelegRESTClient">
     <configuration name="GalgelegRESTClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GalgelegRESTClient" />
       <module name="Client_main" />
@@ -1105,11 +1161,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GalgelegRMIClient" />
-        <item itemvalue="Application.GalgelegRMIServer" />
-        <item itemvalue="Application.GalgelegRESTServer" />
-        <item itemvalue="Gradle.Galgeleg-Distribueret:Server [build]" />
         <item itemvalue="Application.GalgelegRESTClient" />
+        <item itemvalue="Application.GalgelegRESTServer" />
+        <item itemvalue="Application.GalgelegRMIServer" />
+        <item itemvalue="Application.GalgelegRMIClient" />
+        <item itemvalue="Gradle.Galgeleg-Distribueret:Server [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -1133,6 +1189,7 @@
       <workItem from="1583928598800" duration="304000" />
       <workItem from="1584002356285" duration="5017000" />
       <workItem from="1584087824462" duration="16650000" />
+      <workItem from="1584176934875" duration="5929000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1581683235173</created>
@@ -1278,7 +1335,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55354000" />
+    <option name="totallyTimeSpent" value="62710000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1293,7 +1350,40 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21295546" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21619433" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.3291815" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.8380783" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.9039146" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3291815" />
+      <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.3291815" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3202847" />
+      <window_info anchor="bottom" id="Message" order="9" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.4483986" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.430605" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32955465" />
+      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.004048583" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21619433" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1304,44 +1394,11 @@
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.38256228" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.9039146" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3291815" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.017793594" />
-      <window_info anchor="bottom" id="Message" order="9" />
-      <window_info anchor="bottom" id="Find" order="10" weight="0.4483986" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.39679715" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32955465" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.008906882" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21295546" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.3291815" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.85231316" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3291815" />
-      <window_info anchor="bottom" id="TODO" order="5" weight="0.3291815" />
-      <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.3291815" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.017793594" />
+      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.26156583" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.4483986" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39679715" />
@@ -1414,6 +1471,28 @@
     <MESSAGE value="Implement ServerControllerRMI to handle all Galgelogik instances" />
     <option name="LAST_COMMIT_MESSAGE" value="Implement ServerControllerRMI to handle all Galgelogik instances" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java</url>
+          <line>109</line>
+          <properties class="GalgelegRESTServer" method="guessOnLetter">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/GalgelegRESTClient.java</url>
+          <line>82</line>
+          <properties class="GalgelegRESTClient" method="isGameFinished">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Common/build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1460,13 +1539,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3638">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1537,39 +1609,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java">
+    <entry file="file://$PROJECT_DIR$/Server/out/production/classes/brugerautorisation/server/Brugerdatabase.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/main/java/GalgelegRESTClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/main/java/IGalgeLogik.java">
+    <entry file="file://$PROJECT_DIR$/Common/src/main/java/IServerRMIController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="74" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="74" />
+          <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelogikImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="55" />
+        <state relative-caret-position="97">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#448#456#0" expanded="true" />
+            <element signature="e#543#551#0" expanded="true" />
             <element signature="e#1165#1166#0" expanded="true" />
             <element signature="e#1197#1198#0" expanded="true" />
             <element signature="e#1244#1245#0" expanded="true" />
@@ -1590,37 +1654,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/main/java/ServerControllerRMI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/main/java/IServerRMIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRMIServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/GalgelegRESTServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1997">
+          <caret line="130" column="23" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/main/java/GalgelegRESTClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/main/java/Paths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/main/java/ServerControllerRMI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/main/java/IGalgeLogik.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/main/java/GalgelegRMIClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        <state relative-caret-position="170">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

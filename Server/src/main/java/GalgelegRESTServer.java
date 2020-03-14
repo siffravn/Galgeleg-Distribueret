@@ -7,11 +7,13 @@ import java.rmi.Naming;
 public class GalgelegRESTServer {
 
     public static Javalin app;
-    public static IGalgeLogik galgeLogik;
+    static IServerRMIController controller;
+
 
     public static void main(String[] args) throws Exception {
         app = Javalin.create().start(4000);
-        galgeLogik = (IGalgeLogik) Naming.lookup("rmi://localhost/Hangman");
+        controller = (IServerRMIController) Naming.lookup("rmi://localhost/Controller");
+
 
         setupResources();
     }
@@ -21,11 +23,25 @@ public class GalgelegRESTServer {
         app.get("", ctx -> ctx.redirect("/login"));
         app.get("/login", ctx -> login(ctx));
         app.get("/play", ctx -> hangman(ctx));
-        app.get("/play/lives", ctx -> getLives(ctx, galgeLogik));
-        app.get("/play/visibleWord", ctx -> getVisibleWord(ctx, galgeLogik));
-        app.get("/play/usedLetters", ctx -> getUsedLetters(ctx, galgeLogik));
-        app.get("/play/guess", ctx -> guessOnLetter(ctx, galgeLogik));
-        app.get("/play/isFinished", ctx -> isGameFinished(ctx, galgeLogik));
+        app.get("/play/:id", ctx -> createGame(ctx, controller));
+        app.get("/play/:id/lives", ctx -> getLives(ctx, controller));
+        app.get("/play/:id/visibleWord", ctx -> getVisibleWord(ctx, controller));
+        app.get("/play/:id/usedLetters", ctx -> getUsedLetters(ctx, controller));
+        app.get("/play/:id/guess", ctx -> guessOnLetter(ctx, controller));
+        app.get("/play/:id/isFinished", ctx -> isGameFinished(ctx, controller));
+    }
+
+    private static void createGame(Context ctx, IServerRMIController controller) throws Exception {
+        String clientID = ctx.pathParam("id");
+
+        try {
+            controller.newGame(clientID);
+            ctx.html("New game created");
+
+        } catch (Exception e){
+            ctx.html("Couldn't create new game");
+        }
+
     }
 
 
@@ -52,8 +68,11 @@ public class GalgelegRESTServer {
 
     }
 
-    public static void getLives(Context ctx, IGalgeLogik galgeLogik) throws Exception {
+    public static void getLives(Context ctx, IServerRMIController controller) throws Exception {
+        String clientID = ctx.pathParam("id");
+
         try {
+            IGalgeLogik galgeLogik = controller.getGame(clientID);
             int lives = 7-galgeLogik.getAntalForkerteBogstaver();
             ctx.html("" + lives);
 
@@ -62,8 +81,11 @@ public class GalgelegRESTServer {
         }
     }
 
-    public static void getVisibleWord(Context ctx, IGalgeLogik galgeLogik) throws Exception {
+    public static void getVisibleWord(Context ctx, IServerRMIController controller) throws Exception {
+        String clientID = ctx.pathParam("id");
+
         try {
+            IGalgeLogik galgeLogik = controller.getGame(clientID);
             String visibleWord = galgeLogik.getSynligtOrd();
             ctx.html(visibleWord);
 
@@ -72,8 +94,11 @@ public class GalgelegRESTServer {
         }
     }
 
-    public static void getUsedLetters(Context ctx, IGalgeLogik galgeLogik) throws Exception{
+    public static void getUsedLetters(Context ctx, IServerRMIController controller) throws Exception{
+        String clientID = ctx.pathParam("id");
+
         try {
+            IGalgeLogik galgeLogik = controller.getGame(clientID);
             String usedLetters = galgeLogik.getBrugteBogstaver().toString();
             ctx.html(usedLetters);
 
@@ -82,10 +107,14 @@ public class GalgelegRESTServer {
         }
     }
 
-    public static void guessOnLetter (Context ctx, IGalgeLogik galgeLogik) throws Exception {
+    public static void guessOnLetter (Context ctx, IServerRMIController controller) throws Exception {
+        String clientID = ctx.pathParam("id");
+
         try {
+            IGalgeLogik galgeLogik = controller.getGame(clientID);
             String letter = ctx.queryParam("letter");
-            galgeLogik.gaetBogstav(letter);
+
+            galgeLogik.guessLetter(letter);
 
             if (galgeLogik.erSidsteBogstavKorrekt()){
                 ctx.html("correct letter");
@@ -99,8 +128,11 @@ public class GalgelegRESTServer {
         }
     }
 
-    public static void isGameFinished(Context ctx, IGalgeLogik galgeLogik) throws Exception{
+    public static void isGameFinished(Context ctx, IServerRMIController controller) throws Exception{
+        String clientID = ctx.pathParam("id");
+
         try {
+            IGalgeLogik galgeLogik = controller.getGame(clientID);
             boolean isFinished = galgeLogik.erSpilletSlut();
             ctx.html("" + isFinished);
 
